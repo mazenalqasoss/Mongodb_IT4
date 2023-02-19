@@ -34,6 +34,7 @@ db.restaurand.find(
       $or: [ {name: /^Wil/},
         {
           $and:
+            
           [
             {"cuisine":{$ne:"American"}},
             {"cuisine":{$ne:"Chinese"}},
